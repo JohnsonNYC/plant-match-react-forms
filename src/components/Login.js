@@ -31,8 +31,8 @@ class Login extends React.Component {
                 <input placeholder="Name" id="name" name="name" type="text" onChange={this.handleChange} value={this.state.name}/>
                 <input placeholder="Username" id="username" name="username" type="text" onChange={this.handleChange} value={this.state.username}/>
                 <input placeholder="Password" id="password" name="password" type="text" onChange={this.handleChange} value={this.state.password}/>
-                <input placeholder="Confirm Password" id="password" name="password" type="text" onChange={this.handleChange} value={this.state.password}/>
-                <button type="submit">Submit</button>
+                <input placeholder="Confirm Password" id="confirm password" name="comfirm password" type="text" onChange={this.handleChange} value={this.state.password}/>
+                <button  type="submit">Submit</button>
             </form>
         )
     }
