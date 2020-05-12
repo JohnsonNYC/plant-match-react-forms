@@ -2,7 +2,17 @@ import React from 'react';
 
 class Login extends React.Component {
     state = {
+        name: '',
+        username: '',
+        password: ''
         // TODO: What needs to be represented in state for a fully controlled form?
+    }
+
+    handleNameChange = (event) => {
+        this.setState({
+            name: event.target.value},
+            console.log(this.state.name)
+        )
     }
 
     // TODO: What methods need to be created for a fully controlled form?
@@ -14,7 +24,7 @@ class Login extends React.Component {
         return (
             <form className="vertical-flex">
                 <h2>Create an Account</h2>
-                <input placeholder="Name"/>
+                <input onChange={(event) => {this.handleNameChange(event)}} placeholder="Name"/>
                 <input placeholder="Username"/>
                 <input placeholder="Password"/>
                 <input placeholder="Confirm Password"/>
