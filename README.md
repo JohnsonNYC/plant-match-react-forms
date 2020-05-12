@@ -82,6 +82,14 @@ After cloning down the project:
 - `PlantCard` 
 - `SearchForm`: do *not* work on this component until after the core deliverables. 
 
+App
+    Login
+    HomeView
+        MatchContainer
+            
+    Navbar
+
+
 
 ### Additional Files
 - `data.js` stores the data for our app. It's being imported in `HomeView`.  
