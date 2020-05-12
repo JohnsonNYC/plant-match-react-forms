@@ -15,6 +15,11 @@ Look out for `TODO`s in comments. Use the Core Deliverables listed below to guid
 - Diagraming and understanding a component hierarchy
 
 
+App
+|---NavBar, Login, HomeView
+                   |--------- MatchContainer, SearchForm
+                              |               |---------- Form
+                              |-------------------------- PlantCard
 
 
 
