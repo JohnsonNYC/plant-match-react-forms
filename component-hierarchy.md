@@ -1,15 +1,15 @@
 |__App 
     |
-    |__Navbar
+    |__Navbar(function componant)
     |
-    |__Login
+    |__Login(form)
     |
     |__HomeView____________________
       |                         |
       |                         |
-      |__MatchContainer         |__SearchForm
-              |
-              |__PlantCard
+      |__MatchContainer         |__SearchForm(form)
+              /|\
+              PlantCard
 
 
 
