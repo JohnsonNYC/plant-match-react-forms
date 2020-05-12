@@ -2,9 +2,18 @@ import React from 'react';
 
 class Login extends React.Component {
     state = {
+        name: "",
+        userName: "",
+        password: ""
         // TODO: What needs to be represented in state for a fully controlled form?
     }
-
+    handleChange(event){
+        this.setState({value: event.target.value})
+    }
+    handleSubmit(event) {
+        event.preventDefault()
+        alert("the form was submitted:" + this.state.value)
+    }
     // TODO: What methods need to be created for a fully controlled form?
     // HINT: Use the line below to change the view when the form is submitted
     // this.props.changeView('home')
