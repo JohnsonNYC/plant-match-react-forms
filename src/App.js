@@ -14,7 +14,7 @@ class App extends React.Component {
     this.setState({ view })
   }
 
-
+ 
   render() {
     return (
       <div className="App">

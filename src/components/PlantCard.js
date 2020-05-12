@@ -17,7 +17,7 @@ class PlantCard extends React.Component {
             </>
         )
     }
-
+ 
     renderBack = () => {
         const { Common_Name, Scientific_Name, Toxic_Dogs, Toxic_Cats, 
             indoor_flowering, hanging, Sunlight, Plant_Height, Plant_Spread } = this.props;
