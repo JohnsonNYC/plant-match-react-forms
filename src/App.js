@@ -10,7 +10,7 @@ class App extends React.Component {
     username: null // TODO: replace null with 'ChromeBoi' or your name to see the greeting
   }
 
-  changeView = (view) => {
+  changeView = (view) => { // Update function where argument is where you wanna go
     this.setState({ view })
   }
 
@@ -18,9 +18,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-       <Navbar changeView={this.changeView} view={this.state.view} username={this.state.username} />
-       {this.state.view === 'login' && <Login changeView={this.changeView}/>}
-       {this.state.view === 'home' && <HomeView />}
+        <Navbar changeView={this.changeView} view={this.state.view} username={this.state.username} />
+        {this.state.view === 'login' && <Login changeView={this.changeView} />}
+        {this.state.view === 'home' && <HomeView />}
       </div>
     );
   }
