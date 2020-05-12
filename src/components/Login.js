@@ -3,6 +3,9 @@ import React from 'react';
 class Login extends React.Component {
     state = {
         // TODO: What needs to be represented in state for a fully controlled form?
+        name: '',
+        username: '',
+        password: ''
     }
 
     // TODO: What methods need to be created for a fully controlled form?
