@@ -28,7 +28,8 @@ class Login extends React.Component {
                 <input 
                     type="text"
                     name="name"
-                    onChange={(event) => this.props.handleNameChange(event)}
+                    onChange={(event) => this.handleNameChange(event)}
+                    // if there's another parent you may do .props .formData or something like that - see 17 From.js
                     value={this.state.value}
                     placeholder="Name"/>
                 <input placeholder="Username"/>
