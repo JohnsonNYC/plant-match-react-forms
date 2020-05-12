@@ -34,15 +34,19 @@ class Login extends React.Component {
             confirmPassword: e.target.value
          })
     }
+    onFormSubmit = (e) => {
+        e.preventDefault()
+        this.props.changeView('home')
+    }
     render(){
         // TODO: What additional attributes and event handlers are needed on each of the elements below?
         console.log(this.state)
         return (
-            <form  className="vertical-flex">
+            <form onSubmit={this.onFormSubmit}  className="vertical-flex">
                 <h2>Create an Account</h2>
                 <input onChange={this.onNameChange} value={this.state.name} placeholder="Name"/>
                 <input onChange={this.onUsernameChange} placeholder="Username"/>
-                <input onChange={this.onPasswordChange} value={this.state.username} placeholder="Password"/>
+                <input onChange={this.onPasswordChange} value={this.state.password} placeholder="Password"/>
                 <input onChange={this.onConfirmPasswordChange} value={this.state.confirmPassword}placeholder="Confirm Password"/>
                 <button type="submit">Submit</button>
             </form>
