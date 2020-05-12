@@ -13,6 +13,11 @@ Look out for `TODO`s in comments. Use the Core Deliverables listed below to guid
 - Building fully controlled forms
 - Identifying where state should live and passing state values around as props
 - Diagraming and understanding a component hierarchy
+
+
+
+
+
 - Continued practice with event handlers
 - Practicing inverse data flow
 
