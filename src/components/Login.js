@@ -2,7 +2,14 @@ import React from 'react';
 
 class Login extends React.Component {
     state = {
-        // TODO: What needs to be represented in state for a fully controlled form?
+        Login: Login // TODO: What needs to be represented in state for a fully controlled form?
+    }
+
+    handleSubmit = ()=>{
+
+        this.setState(
+            this.props.changeView('home')
+        )
     }
 
     // TODO: What methods need to be created for a fully controlled form?
@@ -18,7 +25,7 @@ class Login extends React.Component {
                 <input placeholder="Username"/>
                 <input placeholder="Password"/>
                 <input placeholder="Confirm Password"/>
-                <button type="submit">Submit</button>
+                <button onSubmit={this.handleSubmit} type="submit">Submit</button>
             </form>
         )
     }
