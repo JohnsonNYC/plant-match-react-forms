@@ -5,7 +5,24 @@ import SearchForm from './SearchForm';
 
 class HomeView extends React.Component {
     state = {
+        filter: "",
         plants: plants
+    }
+
+    changeInput = (event) => {
+        console.log("change", event.target.value);
+
+        const filter = event.target.value;
+        const filteredPlants = plants.filter(plant => {
+            return plant.Common_Name.toLowerCase().indexOf(filter) > -1;
+        });
+
+        console.log(plants);
+
+        this.setState({
+            filter,
+            plants: filteredPlants
+        });
     }
 
     render(){
@@ -14,7 +31,7 @@ class HomeView extends React.Component {
 
         return (
             <div>
-                <input placeholder="Search for Plants"/>
+                <input placeholder="Search for Plants" value={this.state.filter} onChange={this.changeInput}/>
                 {/* <SearchForm /> */} {/** DO NOT UNCOMMENT THIS LINE UNTIL WORKING ON ADVANCED DELIVERABLES */}
                 <MatchContainer plants={this.state.plants}/>
             </div>
