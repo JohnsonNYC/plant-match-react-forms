@@ -19,7 +19,10 @@ class Login extends React.Component {
         this.setState(copy);
     };
 
-    submitLogin = () => {
+    submitLogin = (event) => {
+        event.preventDefault();
+        console.log("SUBMIT LOGIN", this.state.userName);
+        this.props.setUserName(this.state.userName);
         this.props.changeView("home");
     }
 
