@@ -33,17 +33,19 @@ class Login extends React.Component {
               })
         }
 
-        onFormSubmit = () => {
-            
+        onFormSubmit = (e) => {
+            e.preventDefault()
+            this.props.changeView('home')
         }
     // TODO: What methods need to be created for a fully controlled form?
     // HINT: Use the line below to change the view when the form is submitted
     // this.props.changeView('home')
 
     render(){
+        console.log(this.state)
         // TODO: What additional attributes and event handlers are needed on each of the elements below?
         return (
-            <form onChange={this.onFormChange}
+            <form onSubmit={this.onFormSubmit}
             className="vertical-flex">
                 <h2>Create an Account</h2>
                 <input onChange={this.onNameChange} value={this.state.name} placeholder="Name"/>
