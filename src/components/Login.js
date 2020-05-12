@@ -42,7 +42,7 @@ class Login extends React.Component {
   render() {
     // TODO: What additional attributes and event handlers are needed on each of the elements below?
     return (
-      <form className="vertical-flex">
+      <form onChange={console.log(this.state)} className="vertical-flex">
         <h2>Create an Account</h2>
         <input
           type="text"
@@ -72,7 +72,7 @@ class Login extends React.Component {
           value={this.state.confirmPassword}
           placeholder="Confirm Password"
         />
-        <button onChange={console.log(this.state)} type="submit">Submit</button>
+        <button type="submit">Submit</button>
       </form>
     );
   }
