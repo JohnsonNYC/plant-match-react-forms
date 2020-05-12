@@ -2,6 +2,7 @@ import React from 'react';
 
 const Navbar = props => {
     const { view, changeView, username } = props;
+    console.log(props)
     return (
         <div className="simple-flex-row top">
             {username 

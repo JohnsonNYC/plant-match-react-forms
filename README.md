@@ -100,10 +100,11 @@ done
 - When the user clicks on `Login` they're shown the `Login` component and the form it contains. Make `Login` a fully controlled form. When it submits, it should redirect the user to the plants view. There's some code to help you with the redirect.
 Finished. 
 - On the plants view, when a user types into the search bar, the plants should be filtered. Consider where state should live for this controlled form and how to complete that filter. 
-
+Done.
 ### Advanced Deliverables
 If you get through all of the Core Deliverables, try your hand at the Advanced ones. 
 - Add behavior so when a user logs in, it replaces the username in `App` state to the submitted username and updates the greeting.
+Done.
 - Uncomment the `SearchForm` component in `HomeView` and look at the additional options it has. Make this search form handle all of its inputs as controlled form elements and have them control what plants are rendered. It's up to you to decide where state should live. It *might not* be most ideal for it to live on `SearchForm`.
 
 
