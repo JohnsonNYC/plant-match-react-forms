@@ -75,11 +75,11 @@ After cloning down the project:
 ## What You Already Have
 ### Components
 - `App` 
-- `Navbar` 
-- `Login` 
-- `HomeView` 
-- `MatchContainer` 
-- `PlantCard` 
+    - `Navbar` 
+    - `Login` 
+    - `HomeView` 
+        - `MatchContainer` 
+            - `PlantCard` 
 - `SearchForm`: do *not* work on this component until after the core deliverables. 
 
 
