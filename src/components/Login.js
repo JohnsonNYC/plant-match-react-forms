@@ -7,9 +7,18 @@ class Login extends React.Component {
         password: ""
         // TODO: What needs to be represented in state for a fully controlled form?
     }
-    handleChange(event){
-        this.setState({value: event.target.value})
+    handleNameChange = (event) =>{
+        this.setState({name: event.target.value})
+        console.log(this.state)
+        console.log(event.target.value)
     }
+    handleUsernameChange = (event) =>{
+        this.setState({username: event.target.value})
+    }
+    handlePasswordChange = (event) =>{
+        this.setState({password: event.target.value})
+    }
+
     handleSubmit(event) {
         event.preventDefault()
         alert("the form was submitted:" + this.state.value)
@@ -23,9 +32,9 @@ class Login extends React.Component {
         return (
             <form className="vertical-flex">
                 <h2>Create an Account</h2>
-                <input placeholder="Name"/>
-                <input placeholder="Username"/>
-                <input placeholder="Password"/>
+                <input onChange={(event) => this.handleNameChange(event)} placeholder="Name"/>
+                <input onChange={(event) => this.handleUsernameChange(event)} placeholder="Username"/>
+                <input onChange={(event) => this.handlePasswordChange(event)} placeholder="Password"/>
                 <input placeholder="Confirm Password"/>
                 <button type="submit">Submit</button>
             </form>
