@@ -7,7 +7,6 @@ import HomeView from './components/HomeView';
 class App extends React.Component {
   state = {
     view: 'home',
-    username: 'Kelly'
   }
 
   changeView = (view) => {
